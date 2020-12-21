@@ -1,0 +1,592 @@
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1200px
+
+@media only screen and (max-width : 1199px)
+	.header
+		&-nav
+			padding-left: 60px
+		&-menu
+			li
+				margin-right: 5px
+				a
+					padding: 10px
+
+	.product-item
+		width: 50%
+
+	.cart
+		max-width: 289.98px
+
+	/*-------------------Cart-page--------------------*/
+	.basket
+		&-totalprice
+			padding-right: 268.8px
+	/*-------------------end Cart-page--------------------*/
+
+@media only screen and (max-width : 992px)
+	.header
+		&.fixed
+			.header-main
+				padding: 15px 0
+			.menu-mob
+				top: 32px
+		&.active
+			z-index: 1000
+			border-bottom: 1px solid rgba(#fff, .2)
+			background: none
+			.header-location__link
+				color: #fff
+				&:after
+					background: url(../images/arrow-down-white.png) 0 0 no-repeat
+		&-main
+			padding: 15px 0
+		&-nav
+			display: none
+		&-menu
+			li
+				display: block
+				margin-right: 0
+				a
+					display: inline-block
+					padding: 4px 0
+					font-size: 24px
+					font-weight: 700
+					color: #fff
+					&:after
+						display: none
+					&:hover
+						color: $accent
+		&-login
+			display: none
+			&__mob
+				position: absolute
+				display: inline-block !important
+				top: 0
+				right: 15px
+				width: 150px
+				color: $accent
+				line-height: 38px
+		&-phone
+			display: inline-block
+			margin-top: 4px
+			font-size: 24px
+			font-weight: 700
+			color: $accent
+			&:hover
+				color: $accent
+		&-cart
+			display: none
+			&_mob
+				position: absolute
+				display: inline-block !important
+				top: 12px
+				right: 15px
+
+	.mob-nav
+		display: block
+		position: fixed
+		width: 100%
+		overflow-y: auto
+		top: 0
+		left: -120%
+		transition: all .25s ease
+		padding: 115px 0 50px
+		z-index: 999
+		&.open
+			left: 0
+		.container
+			position: relative
+			max-width: 720px
+			padding: 0 15px
+
+	.menu-mob
+		display: block
+		top: 32px
+
+	.slider-main
+		margin-top: 65px
+
+	.slide-item
+		height: 320px
+
+	.menu-list
+		&__item
+			width: calc(100% / 5)
+		&__title
+			margin-left: 8px
+			font-size: 15px
+
+	.cart
+		display: none
+
+	.cart-stick-wrap
+		display: block
+
+	.inner
+		padding-top: 135px
+
+	/*-------------------About-page--------------------*/
+	.section-about
+		padding-bottom: 70px
+
+	.about
+		&-text
+			margin-bottom: 30px
+		&-pict
+			margin-top: 0
+	/*-------------------end About-page--------------------*/
+
+	/*-------------------Cart-page--------------------*/
+	.section-cart
+		padding-bottom: 60px
+
+	.basket
+		flex: auto
+		&-item
+			&:last-child
+				border-bottom: none
+		&-totalprice
+			padding-right: 0
+
+	.promocode
+		flex: auto
+		&-box
+			max-width: 100%
+			margin: 10px 0
+			padding: 24px 55px 32px
+		&-title
+			text-align: center
+		&-btn
+			width: 187px
+			margin: 0 auto
+
+	.floating
+		position: relative !important
+		&.fixed
+			position: relative
+			top: 0
+
+	.basket
+		&-formside
+			margin-left: 30px
+	/*-------------------end Cart-page--------------------*/
+
+@media only screen and (max-width : 768px)
+	.mob-nav
+		.container
+			max-width: 540px
+
+	.header
+		&_inner
+			border-bottom: none
+		&-nav
+			.container
+				max-width: 540px
+		&-login
+			&__mob
+				display: block !important
+
+	.slide-item
+		height: 230px
+
+	.menu-list
+		&__item
+			width: calc(100% / 4)
+			min-width: 127px
+
+	.footer
+		padding: 20px 0
+		&-wrap
+			flex-wrap: wrap
+			justify-content: center
+		&-copyright
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			width: 100%
+			margin-bottom: 5px
+			text-align: center
+		&-politic
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			width: 100%
+			margin-bottom: 5px
+			text-align: center
+		&-contact
+			justify-content: center
+			width: 100%
+		&-social
+			justify-content: center
+			margin-bottom: 2px
+		&-phone
+			margin: 0
+
+	/*-------------------Contact-page--------------------*/
+	.contact
+		&-wrap
+			flex-wrap: wrap
+		&-main
+			width: 100%
+			max-width: 100%
+		&-map
+			width: 100%
+	/*-------------------end Contact-page--------------------*/
+
+	/*-------------------Sale-page--------------------*/
+	.sale
+		.row
+			margin: 0 -15px
+		.col-lg-6
+			padding: 0 15px
+		&-item
+			margin-bottom: 30px
+
+	/*-------------------end Sale-page--------------------*/
+
+	/*-------------------Cart-page--------------------*/
+	.section-cart
+		padding: 0 0 100px
+
+	.basket
+		&-header
+			padding-bottom: 0
+			border-bottom: none
+		&-item
+			padding-left: 0
+			&__order
+				position: relative
+				display: inline-block
+			&__count
+				margin: 0 0 10px
+			&__prices
+				margin-right: 27px
+			&__oldprice
+				position: relative
+				top: 0
+			&__curprice
+				line-height: 1
+			&__gift
+				margin-right: 66px
+			&__remove
+				position: absolute
+				bottom: 10px
+				right: 0
+				margin-right: 0
+			&_notprice
+				.basket-item__remove
+					display: none
+			&__col
+				margin-bottom: 30px
+				padding: 0 18px
+		&-totalprice
+			padding-right: 15px
+		&-order
+			margin-top: 120px
+			padding: 0 30px
+			&__wrap
+				flex-wrap: wrap
+		&-form
+			order: 2
+			width: 100%
+			margin-top: 50px
+			&__row
+				flex-wrap: wrap
+			&__col
+				width: 100%
+				max-width: 100%
+				margin-right: 0
+		&-formside
+			order: 1
+			width: 100%
+			margin-left: 0
+		&-orderbtn
+			display: none
+			&_mob
+				display: block
+				margin: 12px auto 0
+
+	.promocode
+		padding: 0 30px
+	/*-------------------end Cart-page--------------------*/
+
+@media only screen and (max-width : 575px)
+	.header
+		&-location
+			display: none
+			&_mob
+				display: block
+				margin: 0 0 20px
+			&__link
+				color: #fff
+				&:after
+					background: url(../images/arrow-down-white.png) 0 0 no-repeat
+		&-nav
+			.container
+				max-width: 100%
+		&-login
+			&__mob
+				top: -9px
+		&-cart
+			&_mob
+				top: 2px
+
+	.login-modal
+		.modal-dialog
+			margin: .5rem auto
+
+	.cart-stick
+		right: auto
+		left: 15px
+
+	.slider-main
+		margin: 65px -15px 0
+
+	.slide-item
+		height: 205px
+
+	.menu-list
+		margin: 0 -15px
+		&__item
+			min-width: 119px
+		&__title
+			margin-left: 7px
+
+	.products
+		margin: 0 -15px
+
+	.product-item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		width: 100%
+		padding: 30px 15px 10px
+		&__top
+			position: relative
+			width: 35%
+		&__stick
+			top: -10px
+			right: 0
+		&__pict
+			margin-bottom: 15px
+			text-align: left
+		&__title
+			display: none
+			&_mob
+				display: block
+				padding-left: 15px
+		&__info
+			display: none
+			&_mob
+				display: block
+				margin-bottom: 0
+				padding-left: 15px
+		&__main
+			position: relative
+			width: 65%
+			padding: 0 0 60px 0
+		&__desc
+			padding-left: 42px
+		&__bottom
+			position: absolute
+			bottom: 5px
+			width: 100%
+			padding-left: 42px
+
+	.product-banner
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		margin-bottom: 35px
+		padding: 35px 30px
+		&:before
+			bottom: -130px
+			left: auto
+			right: 40px
+		&__header
+			min-width: 170px
+		&__text
+			width: 59%
+			margin: 0
+			padding: 0 0 18px 40px
+			border-top: none
+			border-left: 1px solid rgba(255, 255, 255, 0.5)
+
+	/*-------------------Contact-page--------------------*/
+	.contact
+		&-wrap
+			margin: 0 -15px
+			&:before
+				width: 250px
+				height: 300px
+				right: 0
+				top: -50px
+		&-main
+			padding: 35px 20px 30px
+	/*-------------------end Contact-page--------------------*/
+
+	/*-------------------Cart-page--------------------*/
+	.basket
+		padding: 0
+		&-header
+			padding: 0 15px
+		&-clean
+			display: none
+		&-item
+			padding: 32px 15px 25px
+
+	/*-------------------end Cart-page--------------------*/
+
+@media only screen and (max-height : 440px)
+	.mob-nav
+		padding-top: 75px
+		&__close
+			top: 0
+
+	.header
+		&-menu
+			li
+				a
+					padding: 2px 0
+					font-size: 16px
+		&-login
+			&__mob
+				top: 0
+		&-phone
+			font-size: 20px
+
+@media only screen and (max-width : 479px)
+	.header
+		&.fixed
+			.header-main
+				padding: 10px 0
+			.menu-mob
+				top: 18px
+		&-main
+			padding: 10px 0
+
+	.menu-mob
+		top: 28px
+
+	.slider-main
+		margin-top: 55px
+
+	.slide-item
+		display: none
+		&_mob
+			display: block
+			height: 400px
+
+	.menu-list
+		&__item
+			min-width: auto
+			width: calc(100% / 3)
+
+	.section-content
+		padding: 50px 0
+
+	.product-item
+		&__title
+			&_mob
+				padding-left: 0
+		&__info
+			&_mob
+				padding-left: 0
+		&__desc
+			padding-left: 20px
+		&__bottom
+			padding-left: 20px
+
+	.inner
+		padding-top: 110px
+
+	/*-------------------Cart-page--------------------*/
+	.basket
+		&-item
+			flex-wrap: wrap
+			&__main
+				width: 100%
+			&__order
+				display: flex
+				width: 100%
+				justify-content: space-between
+				margin-top: 25px
+			&__count
+				margin: 0 20px 0 0
+			&__oldprice
+				position: absolute
+				top: -18px
+			&__curprice
+				line-height: 1.4
+			&__remove
+				margin-right: 0
+		&-totalprice
+			padding-right: 0
+		&-order
+			margin-top: 50px
+			padding: 0 15px
+
+	.promocode
+		padding: 0 15px
+		&-box
+			padding: 24px 15px 32px
+
+	/*-------------------end Cart-page--------------------*/
+
+@media only screen and (max-width : 400px)
+	.slide-item
+		&_mob
+			height: 290px
+
+	.menu-list
+		&__item
+			min-width: auto
+			width: calc(100% / 3)
+		&__title
+			font-size: 14px
+
+	.product-item
+		flex-wrap: wrap
+		&__top
+			display: inline-block
+			width: 100%
+		&__main
+			width: 100%
+			padding: 15px 0 30px 0
+		&__desc
+			height: auto
+			margin-bottom: 20px
+			padding-left: 0
+		&__bottom
+			position: relative
+			bottom: 0
+			width: 100%
+			padding-left: 0
+
+	.product-banner
+		flex-wrap: wrap
+		&__header
+			width: 100%
+		&__text
+			width: 100%
+			padding: 20px 0 18px 0
+			border-left: none
+			border-top: 1px solid rgba(255, 255, 255, 0.5)
+	/**/

@@ -1,0 +1,106 @@
+/*-------Base styles----------*/
+*::-webkit-input-placeholder
+	color: #b1b1b1
+	opacity: 1
+
+*:-moz-placeholder
+	color: #b1b1b1
+	opacity: 1
+
+*::-moz-placeholder
+	color: #b1b1b1
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #b1b1b1
+	opacity: 1
+
+// html.js .loader
+// 	background: none repeat scroll 0 0 #ffffff
+// 	bottom: 0
+// 	height: 100%
+// 	left: 0
+// 	position: fixed
+// 	right: 0
+// 	top: 0
+// 	width: 100%
+// 	z-index: 9999
+// 	.loader_inner
+// 		background-image: url("../img/preloader.png")
+// 		background-size: cover
+// 		background-repeat: no-repeat
+// 		background-position: center center
+// 		background-color: #fff
+// 		height: 200px
+// 		width: 200px
+// 		margin-top: -100px
+// 		margin-left: -100px
+// 		left: 50%
+// 		top: 50%
+// 		position: absolute
+
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	color: red
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: green
+
+html, body
+	height: 100%
+
+body
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	font-family: $default-font
+	color: $main-color
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+*
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+a
+	color: $main-color
+	text-decoration: none
+	transition: all .15s ease
+	&:hover
+		text-decoration: none
+	&:focus
+		outline: none
+		text-decoration: none
+
+p
+	margin: 0
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.clearfix
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+.hidden
+	display: none
+
+.main, .inner
+	flex: 1 0 auto
+/*----------end---------------*/

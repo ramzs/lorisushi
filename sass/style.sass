@@ -1,0 +1,603 @@
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.slider-main
+	display: none
+	margin-top: 110px
+	.sl-item
+		outline: none
+	.slick-dots
+		position: absolute
+		bottom: 20px
+		left: 0
+		right: 0
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 10px
+			button
+				display: block
+				width: 10px
+				height: 10px
+				padding: 0
+				font-size: 0
+				cursor: pointer
+				outline: none
+				border: none
+				border-radius: 50%
+				background: rgba(#ff0062, .2)
+			&.slick-active
+				button
+					background: $accent
+
+.slide-item
+	position: relative
+	display: block
+	height: 400px
+	z-index: 1
+	// &__caption
+	// 	position: absolute
+	// 	top: 50%
+	// 	right: 15%
+	// 	transform: translateY(-50%)
+	// 	z-index: 2
+	// 	&:before
+	// 		content: ''
+	// 		position: absolute
+	// 		top: 5px
+	// 		left: -5px
+	// 		width: 100%
+	// 		height: 100%
+	// 		z-index: -1
+	// 		transform: skewX(-3deg)
+	// 		background: #fff
+	// &__content
+	// 	position: relative
+	// 	z-index: 2
+	// 	transform: skewX(-3deg)
+	// 	background: $violet
+	// &__wrap
+	// 	padding: 18px 58px 37px
+	// 	transform: skewX(3deg)
+	// &__title
+	// 	font-size: 44px
+	// 	font-weight: 700
+	// 	color: #fff
+	// 	line-height: 1.2
+	// &__desc
+	// 	display: -webkit-flex
+	// 	display: -moz-flex
+	// 	display: -ms-flex
+	// 	display: -o-flex
+	// 	display: flex
+	// 	justify-content: space-between
+	// 	align-items: center
+	// 	margin-bottom: 18px
+	// 	padding-right: 59px
+	// 	font-size: 18px
+	// 	color: #fff
+	// &__bottom
+	// 	display: -webkit-flex
+	// 	display: -moz-flex
+	// 	display: -ms-flex
+	// 	display: -o-flex
+	// 	display: flex
+	// 	justify-content: space-between
+	// 	align-items: center
+	// &__price
+	// 	display: inline-block
+	// 	margin-right: 35px
+	// 	font-size: 36px
+	// 	font-weight: 600
+	// 	color: #fff
+	// 	span
+	// 		font-size: 18px
+	// &__btn
+	// 	display: inline-block
+	// 	width: 161px
+	&_mob
+		display: none
+
+.menu-list
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	align-items: center
+	border-left: 1px solid #e5e5e5
+	&__item
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		width: calc(100% / 5)
+		min-width: 129px
+		height: 80px
+		overflow: hidden
+		border-right: 1px solid #e5e5e5
+		border-bottom: 1px solid #e5e5e5
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 0
+			height: 4px
+			transition: all .25s ease
+			background: $accent
+		&:hover
+			color: #333
+			&:after
+				width: 100%
+	&__pict
+		position: relative
+		width: 34%
+		img
+			position: absolute
+			display: block
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+	&__title
+		margin-left: 14px
+		font-size: 16px
+		font-weight: 600
+
+.section-content
+	padding: 54px 0 100px
+
+.section-title
+	margin-bottom: 12px
+	font-size: 28px
+	font-weight: 600
+
+.products
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+.product-item
+	position: relative
+	display: inline-block
+	width: 33.33%
+	margin: 0 -1px -1px 0
+	padding: 30px 27px 90px
+	border: 1px solid #e5e5e5
+	&__pict
+		position: relative
+		display: block
+		text-align: center
+		img
+			display: inline-block
+			max-width: 100%
+	&__stick
+		position: absolute
+		top: 22px
+		right: 28px
+		width: 50px
+		height: 50px
+		z-index: 2
+		border-radius: 50%
+		background: $blue
+		span
+			font-size: 16px
+			font-weight: 600
+			color: #fff
+			@include vcenter
+	&__main
+		padding-top: 12px
+	&__title
+		display: inline-block
+		font-size: 24px
+		font-weight: 600
+		line-height: 1.1
+		&_mob
+			display: none
+		&:hover
+			color: $accent
+	&__info
+		margin-bottom: 7px
+		font-size: 12px
+		color: #989898
+		&_mob
+			display: none
+	&__desc
+		height: 100px
+		overflow: hidden
+		a
+			font-size: 12px
+			color: #989898
+			&:hover
+				color: $accent
+	&__bottom
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		padding: 0 27px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+	&__count
+		display: none !important
+		&.active
+			display: -webkit-flex !important
+			display: -moz-flex !important
+			display: -ms-flex !important
+			display: -o-flex !important
+			display: flex !important
+	&__price
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+		height: 54px
+	&__oldprice
+		position: relative
+		display: inline-block
+		font-size: 18px
+		color: #969696
+		font-weight: 600
+		line-height: 1.2
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 70px
+			height: 2px
+			background: $accent
+		span
+			font-size: 11px
+	&__newprice
+		width: 100%
+		font-size: 24px
+		font-weight: 600
+		span
+			font-size: 12px
+	&__btn
+		min-width: 110px
+		width: 110px
+
+.count
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-width: 110px
+	width: 110px
+	height: 35px
+	padding: 2px
+	border: 1px solid #e5e5e5
+	border-radius: 18px
+	&-counter
+		position: relative
+		display: inline-block
+		min-width: 29px
+		width: 29px
+		height: 29px
+		padding: 0
+		font: 400 16px/1.4 $default-font
+		color: #fff
+		outline: none
+		transition: all .25s ease
+		border: 1px solid $blue
+		box-shadow: none
+		border-radius: 50%
+		background: $blue
+		&:focus
+			outline: none
+		span
+			@include vcenter
+		&:hover
+			background: #fff
+			span
+				color: $blue
+	&-in
+		display: inline-block
+		width: 100%
+		font: 400 16px/1.4 $default-font
+		color: #333
+		text-align: center
+		outline: none
+		box-shadow: none
+		border: none
+		background: none
+
+.product-banner
+	padding: 32px 25px
+	overflow: hidden
+	background: $blue
+	&:before
+		content: ''
+		position: absolute
+		bottom: -72px
+		left: 0
+		right: 0
+		width: 181px
+		height: 182px
+		margin: 0 auto
+		background: url(../images/clock.png) 0 0 no-repeat
+		background-size: 100%
+	&__title
+		font-size: 18px
+		font-weight: 600
+		color: #fff
+	&__subtitle
+		margin-bottom: 20px
+		font-size: 14px
+		color: #efeded
+	&__text
+		margin-top: 30px
+		padding-top: 23px
+		font-size: 14px
+		color: #efeded
+		border-top: 1px solid rgba(#fff, .5)
+		p
+			margin-bottom: 15px
+
+.floating
+	&.fixed
+		position: fixed
+		top: 85px
+		z-index: 99
+
+.cart
+	width: 100%
+	max-width: 370px
+	padding: 30px
+	border: 1px solid #e5e5e5
+	&.cart-empty
+		.cart-header__title
+			span
+				display: none
+		.cart-body, .cart-footer
+			display: none
+		.cart-empty-title
+			display: block
+	&-empty-title
+		display: none
+		margin: 75px 0 60px
+		font-size: 24px
+		font-weight: 600
+		text-align: center
+	&-header
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 15px
+		border-bottom: 1px solid #e5e5e5
+		&__title
+			font-size: 24px
+			font-weight: 600
+			span
+				display: inline-block
+				margin-left: 12px
+				padding-left: 12px
+				font-size: 18px
+				line-height: 1.7
+				border-left: 1px solid #e5e5e5
+	&-remove
+		font-size: 14px
+		color: #989898
+		&:hover
+			color: $accent
+	&-item
+		position: relative
+		padding: 18px 0 10px
+		border-bottom: 1px solid #e5e5e5
+		&__body
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			padding-bottom: 18px
+		&__pict
+			min-width: 80px
+			max-width: 80px
+			img
+				display: block
+				max-width: 100%
+		&__main
+			padding-left: 16px
+		&__title
+			margin-bottom: 2px
+			padding-right: 15px
+			font-size: 18px
+			font-weight: 600
+			&:hover
+				color: $accent
+		&__desc
+			line-height: 1.2
+			a
+				font-size: 10px
+				color: #989898
+				&:hover
+					color: $accent
+		&__delete
+			position: absolute
+			top: 26px
+			right: 0
+			width: 11px
+			height: 11px
+			background: url(../images/close.png) 0 0 no-repeat
+			background-size: 100%
+		&__bottom
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+		&__count
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			min-width: 105px
+			width: 105px
+		&__counter
+			position: relative
+			display: inline-block
+			min-width: 29px
+			width: 29px
+			height: 29px
+			padding: 0
+			font: 400 16px/1 $default-font
+			color: #b7b7b7
+			outline: none
+			transition: all .25s ease
+			border: 1px solid #e5e5e5
+			box-shadow: none
+			border-radius: 50%
+			background: none
+			&:focus
+				outline: none
+			span
+				@include vcenter
+			&:hover
+				border-color: $blue
+				span
+					color: $blue
+		&__in
+			display: inline-block
+			width: 100%
+			font: 600 16px/1.4 $default-font
+			color: #333
+			text-align: center
+			outline: none
+			box-shadow: none
+			border: none
+			background: none
+		&__price
+			font-size: 24px
+			font-weight: 600
+	&-footer
+		padding-top: 23px
+	&-total
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 17px
+	&-subtitle
+		font-size: 18px
+	&-num
+		font-size: 34px
+		font-weight: 600
+		span
+			font-size: 12px
+	&-btn
+		width: 221px
+		margin: 0 auto
+
+// .cart-stick-wrap
+// 	display: none
+// 	position: fixed
+// 	bottom: 100px
+// 	width: 100%
+// 	z-index: 997
+
+// .cart-stick
+// 	position: absolute
+// 	display: inline-block
+// 	bottom: 0
+// 	right: 15px
+// 	width: 96px
+// 	height: 96px
+// 	transition: all .25s ease
+// 	border-radius: 50%
+// 	box-shadow: 0 0 32px rgba(54, 54, 54, 0.3)
+// 	background: $blue
+// 	&:before
+// 		content: ''
+// 		position: absolute
+// 		top: 16px
+// 		left: 0
+// 		right: 0
+// 		width: 35px
+// 		height: 33px
+// 		margin: 0 auto
+// 		background: url(../images/cart-stick.png) 0 0 no-repeat
+// 		background-size: 100%
+// 	&:hover
+// 		box-shadow: 0 0 32px rgba(54, 54, 54, 0.5)
+// 	&__price
+// 		position: absolute
+// 		bottom: 20px
+// 		width: 100%
+// 		font-size: 16px
+// 		font-weight: 600
+// 		color: #fff
+// 		text-align: center
+// 		span
+// 			font-size: 12px
+// 			font-weight: 400
+
+.cart-mob
+	width: 100%
+	max-width: 370px
+	margin: 0 auto
+	padding: 30px
+	border: 1px solid #e5e5e5
+	background: #fff
+	&.cart-empty
+		.cart-header__title
+			span
+				display: none
+		.cart-body, .cart-footer
+			display: none
+		.cart-empty-title
+			display: block
+
+.inner
+	padding: 155px 0 0
+	&-title
+		margin-bottom: 16px
+		font-size: 28px
+		font-weight: 600
+
+@import "contact"
+
+@import "feedback"
+
+@import "about"
+
+@import "sale"
+
+@import "cart"
+
+@import "footer"

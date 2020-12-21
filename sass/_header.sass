@@ -1,0 +1,342 @@
+.header
+	position: fixed
+	flex: 0 0 auto
+	top: 0
+	left: 0
+	right: 0
+	z-index: 995
+	transition: all .25s ease
+	background: #fff
+	&_inner
+		border-bottom: 1px solid #e5e5e5
+	&.fixed
+		box-shadow: 0 0 10px rgba(#000, .3)
+		.header-main
+			padding: 15px 0 10px
+		.header-menu
+			li
+				a
+					&:after
+						bottom: -20px
+	&-main
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		padding: 30px 0 22px
+		transition: all .25s ease
+	&-logo
+		&__link
+			display: inline-block
+			width: 131px
+			img
+				display: block
+				max-width: 100%
+	&-location
+		position: relative
+		margin-left: 38px
+		&_mob
+			display: none
+		&__link
+			position: relative
+			display: inline-block
+			padding-right: 25px
+			font-size: 16px
+			color: #757575
+			&:after
+				content: ''
+				position: absolute
+				top: 8px
+				right: 0
+				width: 10px
+				height: 6px
+				background: url(../images/arrow-down.png) 0 0 no-repeat
+				background-size: 100%
+			&:hover
+				color: $accent
+		&-change
+			display: none
+			position: absolute
+			top: 43px
+			left: 50%
+			transform: translateX(-50%)
+			width: 314px
+			padding: 20px 15px 17px
+			z-index: 3
+			text-align: center
+			border-radius: 5px
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+			background: #fff
+		&__title
+			margin-bottom: 24px
+			font-size: 16px
+			color: #757575
+		&__city, &__changecity
+			margin-bottom: 16px
+			font-size: 24px
+			font-weight: 700
+		&__citywrap
+			margin-bottom: 28px
+		&__changecity
+			display: table
+			margin: 0 auto 10px
+			color: #757575
+			&:hover, &.active
+				color: $accent
+		&__btn
+			width: 150px
+			margin: 0 auto 15px
+	&-nav
+		width: 100%
+		padding: 2px 0 0 102px
+		.container
+			max-width: 100%
+			width: 100%
+			padding: 0
+	&-menu
+		li
+			display: inline-block
+			margin-right: 12px
+			&:last-child
+				margin-right: 0
+			a
+				position: relative
+				display: block
+				padding: 10px 17px
+				font-size: 16px
+				border-bottom: 4px solid transparent
+				&:after
+					content: ''
+					position: absolute
+					bottom: -32px
+					left: 50%
+					transform: translateX(-50%)
+					height: 4px
+					width: 0
+					transition: all .25s ease
+					background: $accent
+				&:hover
+					color: #333
+				&:hover:after
+					width: 100%
+			&.active
+				a:after
+					width: 100%
+	&-login
+		white-space: nowrap
+		&__link
+			display: inline-block
+			font-size: 16px
+			font-weight: 600
+			color: $accent
+			&:hover
+				color: $accent
+		&__mob
+			display: none !important
+	&-phone
+		display: none
+	&-cart
+		&__link
+			display: inline-block
+			min-width: 26px
+			width: 26px
+			img
+				display: block
+				max-width: 100%
+
+.btn
+	display: block
+	padding: 0 15px
+	color: #fff
+	white-space: nowrap
+	transition: all .25s ease
+	border-radius: 20px
+	&_color1
+		border: 1px solid $blue
+		background: $blue
+		&:hover, &:focus:hover
+			color: $blue
+			background: #fff
+		&:focus
+			color: #fff
+			box-shadow: none
+			background: $blue
+		&:active
+			color: $blue
+			box-shadow: none
+			background: #fff
+	&_reverse1
+		color: $blue
+		border: 1px solid $blue
+		background: none
+		&:hover, &:focus:hover
+			color: #fff
+			background: $blue
+		&:focus
+			color: $blue
+			background: #fff
+		&:active
+			color: $blue
+			background: #fff
+	&_color2
+		border: 1px solid $accent
+		background: $accent
+		&:hover, &:focus:hover
+			color: $accent
+			background: #fff
+		&:focus
+			color: #fff
+			box-shadow: none
+			background: $accent
+		&:active
+			color: $accent
+			box-shadow: none
+			background: #fff
+	&_reverse2
+		color: $accent
+		border: 1px solid $accent
+		background: none
+		&:hover, &:focus:hover
+			color: #fff
+			background: $accent
+		&:focus
+			color: $accent
+			background: #fff
+		&:active
+			color: $accent
+			background: #fff
+	&_size1
+		height: 40px
+		font-size: 16px
+	&_size2
+		height: 52px
+		font-size: 18px
+		border-radius: 26px
+	&_size3
+		height: 35px
+		font-size: 14px
+		border-radius: 18px
+	&_size4
+		height: 43px
+		font-size: 16px
+		border-radius: 21px
+	&_size5
+		height: 58px
+		font-size: 18px
+		border-radius: 29px
+
+/*---------------Login form--------------*/
+.login-modal
+	.modal-dialog
+		max-width: 290px
+	&__content
+		max-width: 314px
+		padding: 42px 31px 28px
+		text-align: center
+		border: none
+		border-radius: 5px
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.05)
+	&__title
+		margin-bottom: 24px
+		font-size: 24px
+		font-weight: 700
+	&__close
+		position: absolute
+		float: none
+		top: 15px
+		right: 15px
+		width: 11px
+		height: 11px
+		font-size: 0
+		opacity: 1
+		outline: none
+		background: url(../images/close.png) 0 0 no-repeat
+		background-size: 100%
+		&:focus
+			outline: none
+	input
+		display: block
+		width: 100%
+		height: 40px
+		padding-left: 15px
+		outline: none
+		font-size: 16px
+		color: #5c5c5c
+		border: 1px solid #ff0062
+		border-radius: 20px
+	&__btn
+		width: 174px
+		margin: 34px auto 0
+/*------------end login form------------*/
+
+/*-----------Mobile menu-----------*/
+.overlay
+	// display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	z-index: -1
+	transition: opacity .15s linear
+	background: rgba(#000,.9)
+	&.active
+		opacity: 1
+		z-index: 998
+
+.mob-nav
+	display: none
+	.container
+		position: relative
+	&__close
+		position: absolute
+		top: -63px
+		right: 31px
+		width: 20px
+		height: 20px
+		cursor: pointer
+		background: url(../images/close.svg) 0 0 no-repeat
+		background-size: 100%
+
+.menu-mob
+	display: none
+	position: relative
+	float: right
+	top: 48px
+	right: 0
+	width: 22px
+	height: 18px
+	cursor: pointer
+	z-index: 1000
+	transition: all .25s ease
+	span
+		position: absolute
+		display: block
+		left: 0
+		width: 100%
+		height: 2px
+		transition: all .3s ease
+		background: $accent
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 8px
+		&:nth-child(3)
+			top: 16px
+	&:hover, &.active
+		span
+			background: $accent
+	&.active
+		span
+			&:nth-child(1)
+				top: 8px
+				transform: rotate(45deg)
+			&:nth-child(2)
+				opacity: 0
+			&:nth-child(3)
+				top: 8px
+				transform: rotate(-45deg)
+/*---------end mobile menu---------*/

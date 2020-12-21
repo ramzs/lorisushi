@@ -1,0 +1,63 @@
+.footer
+	flex: 0 0 auto
+	padding: 33px 0
+	border-top: 1px solid rgba(#a1a1a1, .5)
+	background: #fff
+	&-wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-copyright
+		font-size: 14px
+		color: #989898
+	&-politic
+		display: inline-block
+		font-size: 14px
+		color: #989898
+		&:hover
+			color: $accent
+	&-contact
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-social
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		&__item
+			display: inline-block
+			margin-right: 15px
+			font-size: 0
+			&_inst
+				width: 17px
+				height: 17px
+				background: url(../images/inst.png) 0 0 no-repeat
+				background-size: 100%
+				&:hover
+					background: url(../images/inst-h.png) 0 0 no-repeat
+			&_vk
+				width: 24px
+				height: 14px
+				background: url(../images/vk.png) 0 0 no-repeat
+				background-size: 100%
+				&:hover
+					background: url(../images//vk-h.png) 0 0 no-repeat
+	&-phone
+		display: inline-block
+		margin-left: 25px
+		font-size: 18px
+		color: $accent
+		font-weight: 600
+		&:hover
+			color: $accent

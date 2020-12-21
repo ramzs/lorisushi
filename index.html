@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Лори суши</title>
+
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" href="images/favicon/favicon.png">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-144x144.png">
+	<meta property="og:image" content="images/home-og.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+<div class="mob-nav">
+	<div class="container">
+		<!-- <div class="mob-nav__close"></div> -->
+		<div class="header-location header-location_mob">
+			<a href="#" class="header-location__link">Балаково</a>
+			<div class="header-location-change header-location-accept">
+				<div class="header-location__title">Ваш город:</div>
+				<div class="header-location__city">Балаково</div>
+				<button type="submit" class="btn btn_color2 btn_size1 header-location__btn">Да, спасибо</button>
+				<button type="submit" class="btn btn_color2 btn_size1 btn_reverse2 header-location__btn header-location__outer">Нет, другой</button>
+			</div>
+			<div class="header-location-change header-location-replace">
+				<div class="header-location__title">Выберите город</div>
+				<div class="header-location__citywrap">
+					<a href="#" class="header-location__changecity active">Балаково</a>
+					<a href="#" class="header-location__changecity">Вольск</a>
+				</div>
+				<button type="submit" class="btn btn_color2 btn_size1 header-location__btn header-location__city">Выбрать</button>
+			</div>
+		</div>
+
+		<ul class="header-menu">
+			<li class="active"><a href="#">Меню</a></li>
+			<li><a href="sale.html">Акции</a></li>
+			<li><a href="about.html">О нас</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+			<li><a href="feedback.html">Отзывы</a></li>
+		</ul>
+		<!-- <a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__mob" data-toggle="modal">Вход</a> -->
+		<div class="header-cart header-cart_mob">
+			<a href="#" class="header-cart__link"><img src="images/cart2.png" alt="" /></a>
+		</div>
+		<a href="tel:88008880010" class="header-phone">8 (800) 888-00-10</a>
+	</div>
+</div>
+
+<header class="header">
+	<div class="container">
+		<div id="btn-mob" class="menu-mob">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="header-main">
+			<div class="header-logo"><a href="/" class="header-logo__link"><img src="images/logo.svg" alt="Авокадо"></a></div>
+			<div class="header-location">
+				<a href="#" class="header-location__link">Балаково</a>
+				<div class="header-location-change header-location-accept">
+					<div class="header-location__title">Ваш город:</div>
+					<div class="header-location__city">Балаково</div>
+					<button type="submit" class="btn btn_color2 btn_size1 header-location__btn">Да, спасибо</button>
+					<button type="submit" class="btn btn_color2 btn_size1 btn_reverse2 header-location__btn header-location__outer">Нет, другой</button>
+				</div>
+				<div class="header-location-change header-location-replace">
+					<div class="header-location__title">Выберите город</div>
+					<div class="header-location__citywrap">
+						<a href="#" class="header-location__changecity active">Балаково</a>
+						<a href="#" class="header-location__changecity">Вольск</a>
+					</div>
+					<button type="submit" class="btn btn_color2 btn_size1 header-location__btn header-location__city">Выбрать</button>
+				</div>
+			</div>
+			<div class="header-nav">
+				<div class="container">
+
+					<div class="header-location header-location_mob">
+						<a href="#" class="header-location__link">Балаково</a>
+						<div class="header-location-change header-location-accept">
+							<div class="header-location__title">Ваш город:</div>
+							<div class="header-location__city">Балаково</div>
+							<button type="submit" class="btn btn_color2 btn_size1 header-location__btn">Да, спасибо</button>
+							<button type="submit" class="btn btn_color2 btn_size1 btn_reverse2 header-location__btn header-location__outer">Нет, другой</button>
+						</div>
+						<div class="header-location-change header-location-replace">
+							<div class="header-location__title">Выберите город</div>
+							<div class="header-location__citywrap">
+								<a href="#" class="header-location__changecity active">Балаково</a>
+								<a href="#" class="header-location__changecity">Вольск</a>
+							</div>
+							<button type="submit" class="btn btn_color2 btn_size1 header-location__btn header-location__city">Выбрать</button>
+						</div>
+					</div>
+
+					<ul class="header-menu">
+						<li class="active"><a href="/">Меню</a></li>
+						<li><a href="sale.html">Акции</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+						<li><a href="feedback.html">Отзывы</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-cart">
+				<a href="#" class="header-cart__link"><img src="images/cart2.png" alt="" /></a>
+			</div>
+			<!-- <div class="header-login">
+				<a href="#login-modal" class="header-login__link" data-toggle="modal">Личный кабинет</a>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+<div class="main">
+	<!-- <div class="cart-stick-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 col-sm-2 offset-sm-10 col-md-2 offset-md-10">
+					<a href="#cart-modal" class="cart-stick" data-toggle="modal">
+						<div class="cart-stick__price">1200 <span>руб.</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="section-main">
+		<div class="container">
+			<div class="slider-main">
+				<div class="sl-item">
+					<a href="#" class="slide-item" style="background: url(images/slide-1_1.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;">
+						<!-- <img src="images/slide-1_1.jpg" alt=""> -->
+						<!-- <div class="slide-item__caption">
+								<div class="slide-item__content">
+									<div class="slide-item__wrap">
+										<div class="slide-item__title">Салат цезарь</div>
+										<div class="slide-item__desc">С креветкой <span>220 гр.</span></div>
+										<div class="slide-item__bottom">
+											<div class="slide-item__price">220 <span>руб.</span></div>
+											<button type="submit" class="btn btn_size2 slide-item__btn">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					</a>
+					<a href="#" class="slide-item slide-item_mob" style="background: url(images/slide-1-mob.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;"></a>
+				</div>
+				<div class="sl-item">
+					<a href="#" class="slide-item" style="background: url(images/slide-1_1.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;">
+						<!-- <img src="images/slide-1_1.jpg" alt=""> -->
+						<!-- <div class="slide-item__caption">
+								<div class="slide-item__content">
+									<div class="slide-item__wrap">
+										<div class="slide-item__title">Салат цезарь</div>
+										<div class="slide-item__desc">С креветкой <span>220 гр.</span></div>
+										<div class="slide-item__bottom">
+											<div class="slide-item__price">220 <span>руб.</span></div>
+											<button type="submit" class="btn btn_size2 slide-item__btn">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					</a>
+					<a href="#" class="slide-item slide-item_mob" style="background: url(images/slide-1-mob.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;"></a>
+				</div>
+				<div class="sl-item">
+					<a href="#" class="slide-item" style="background: url(images/slide-1_1.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;">
+						<!-- <img src="images/slide-1_1.jpg" alt=""> -->
+						<!-- <div class="slide-item__caption">
+								<div class="slide-item__content">
+									<div class="slide-item__wrap">
+										<div class="slide-item__title">Салат цезарь</div>
+										<div class="slide-item__desc">С креветкой <span>220 гр.</span></div>
+										<div class="slide-item__bottom">
+											<div class="slide-item__price">220 <span>руб.</span></div>
+											<button type="submit" class="btn btn_size2 slide-item__btn">В корзину</button>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					</a>
+					<a href="#" class="slide-item slide-item_mob" style="background: url(images/slide-1-mob.jpg) top center no-repeat;-webkit-background-size: cover;background-size: cover;"></a>
+				</div>
+			</div>
+			<div class="menu-list">
+				<a href="#" class="menu-list__item">
+					<div class="menu-list__pict"><img src="images/menu-1.png" data-src="images/menu-1.png" class+="lazy" alt=""></div>
+					<div class="menu-list__title">Сеты</div>
+				</a>
+				<a href="#" class="menu-list__item">
+					<div class="menu-list__pict"><img src="images/menu-2.png" data-src="images/menu-2.png" class+="lazy" alt=""></div>
+					<div class="menu-list__title">Роллы</div>
+				</a>
+				<!-- <a href="#" class="menu-list__item">
+						<div class="menu-list__pict"><img src="images/menu-3.png" data-src="images/menu-3.png" class+="lazy" alt=""></div>
+						<div class="menu-list__title">Супы</div>
+					</a> -->
+				<!-- <a href="#" class="menu-list__item">
+						<div class="menu-list__pict"><img src="images/menu-4.png" data-src="images/menu-4.png" class+="lazy" alt=""></div>
+						<div class="menu-list__title">Салаты</div>
+					</a> -->
+				<!-- <a href="#" class="menu-list__item">
+						<div class="menu-list__pict"><img src="images/menu-5.png" data-src="images/menu-5.png" class+="lazy" alt=""></div>
+						<div class="menu-list__title">WOK</div>
+					</a> -->
+				<a href="#" class="menu-list__item">
+					<div class="menu-list__pict"><img src="images/menu-6.png" data-src="images/menu-6.png" class+="lazy" alt=""></div>
+					<div class="menu-list__title">Напитки</div>
+				</a>
+				<a href="#" class="menu-list__item">
+					<div class="menu-list__pict"><img src="images/menu-7.png" data-src="images/menu-7.png" class+="lazy" alt=""></div>
+					<div class="menu-list__title">Специи</div>
+				</a>
+				<!-- <a href="#" class="menu-list__item">
+						<div class="menu-list__pict"><img src="images/menu-8.png" data-src="images/menu-8.png" class+="lazy" alt=""></div>
+						<div class="menu-list__title">Десерты</div>
+					</a> -->
+				<a href="#" class="menu-list__item">
+					<div class="menu-list__pict"><img src="images/menu-9.png" data-src="images/menu-9.png" class="lazy" alt=""></div>
+					<div class="menu-list__title">Закуски</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<section class="section-content">
+		<div class="container">
+			<h1 class="section-title">Роллы</h1>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="products floating-sec">
+						<div class="product-item product-banner">
+							<div class="product-banner__header">
+								<div class="product-banner__title">Прием заказов</div>
+								<div class="product-banner__subtitle">с 11:00 до 22:30</div>
+								<div class="product-banner__title">Доставка</div>
+								<div class="product-banner__subtitle">с 11:00 до 22:30</div>
+							</div>
+							<div class="product-banner__text">
+								<p>Заказы от 450 р. доставляются по городу бесплатно</p>
+								<p>Бесплатный комплект специй на каждые 250р. в чеке</p>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="product-item__top">
+								<div class="product-item__stick"><span>-35%</span></div>
+								<a href="#" class="product-item__pict">
+									<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+								</a>
+								<a href="#" class="product-item__title product-item__title_mob">Название в две строки</a>
+								<div class="product-item__info product-item__info_mob">1000г | 36 шт | 999 ккал</div>
+							</div>
+							<div class="product-item__main">
+								<a href="#" class="product-item__title">Название в две строки</a>
+								<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+								<div class="product-item__desc">
+									<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+								</div>
+								<div class="product-item__bottom">
+									<div class="product-item__price">
+										<div class="product-item__oldprice">1100 <span>руб.</span></div>
+										<div class="product-item__newprice">789 <span>руб.</span></div>
+									</div>
+									<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+									<div class="product-item__count count">
+										<button class="count-counter count-counter_minus"><span>-</span></button>
+										<input type="text" class="count-in" value="1">
+										<button class="count-counter count-counter_plus"><span>+</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="product-item__top">
+								<a href="#" class="product-item__pict">
+									<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+								</a>
+								<a href="#" class="product-item__title product-item__title_mob">Альба сет</a>
+								<div class="product-item__info product-item__info_mob">1000г | 36 шт | 999 ккал</div>
+							</div>
+							<div class="product-item__main">
+								<a href="#" class="product-item__title">Альба сет</a>
+								<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+								<div class="product-item__desc">
+									<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+								</div>
+								<div class="product-item__bottom">
+									<div class="product-item__price">
+										<div class="product-item__oldprice">1100 <span>руб.</span></div>
+										<div class="product-item__newprice">789 <span>руб.</span></div>
+									</div>
+									<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+									<div class="product-item__count count">
+										<button class="count-counter count-counter_minus"><span>-</span></button>
+										<input type="text" class="count-in" value="1">
+										<button class="count-counter count-counter_plus"><span>+</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="product-item__top">
+								<a href="#" class="product-item__pict">
+									<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+								</a>
+								<a href="#" class="product-item__title product-item__title_mob">Альба сет</a>
+								<div class="product-item__info product-item__info_mob">1000г | 36 шт | 999 ккал</div>
+							</div>
+							<div class="product-item__main">
+								<a href="#" class="product-item__title">Альба сет</a>
+								<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+								<div class="product-item__desc">
+									<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+								</div>
+								<div class="product-item__bottom">
+									<div class="product-item__price">
+										<!-- <div class="product-item__oldprice">1100 <span>руб.</span></div> -->
+										<div class="product-item__newprice">789 <span>руб.</span></div>
+									</div>
+									<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+									<div class="product-item__count count">
+										<button class="count-counter count-counter_minus"><span>-</span></button>
+										<input type="text" class="count-in" value="1">
+										<button class="count-counter count-counter_plus"><span>+</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="product-item__top">
+								<a href="#" class="product-item__pict">
+									<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+								</a>
+								<a href="#" class="product-item__title product-item__title_mob">Название в три строки в три строки</a>
+								<div class="product-item__info product-item__info_mob">1000г | 36 шт | 999 ккал</div>
+							</div>
+							<div class="product-item__main">
+								<a href="#" class="product-item__title">Название в три строки в три строки</a>
+								<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+								<div class="product-item__desc">
+									<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+								</div>
+								<div class="product-item__bottom">
+									<div class="product-item__price">
+										<div class="product-item__oldprice">1100 <span>руб.</span></div>
+										<div class="product-item__newprice">789 <span>руб.</span></div>
+									</div>
+									<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+									<div class="product-item__count count">
+										<button class="count-counter count-counter_minus"><span>-</span></button>
+										<input type="text" class="count-in" value="1">
+										<button class="count-counter count-counter_plus"><span>+</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-item">
+							<div class="product-item__top">
+								<div class="product-item__stick"><span>-35%</span></div>
+								<a href="#" class="product-item__pict">
+									<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+								</a>
+								<a href="#" class="product-item__title product-item__title_mob">Альба сет</a>
+								<div class="product-item__info product-item__info_mob">1000г | 36 шт | 999 ккал</div>
+							</div>
+							<div class="product-item__main">
+								<a href="#" class="product-item__title">Альба сет</a>
+								<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+								<div class="product-item__desc">
+									<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+								</div>
+								<div class="product-item__bottom">
+									<div class="product-item__price">
+										<!-- <div class="product-item__oldprice">1100 <span>руб.</span></div> -->
+										<div class="product-item__newprice">789 <span>руб.</span></div>
+									</div>
+									<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+									<div class="product-item__count count">
+										<button class="count-counter count-counter_minus"><span>-</span></button>
+										<input type="text" class="count-in" value="1">
+										<button class="count-counter count-counter_plus"><span>+</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="cart floating">
+						<div class="cart-header">
+							<div class="cart-header__title">Корзина<span>3</span></div>
+							<a href="#" class="cart-remove">Очистить</a>
+						</div>
+						<div class="cart-body">
+							<div class="cart-item">
+								<div class="cart-item__body">
+									<a href="#" class="cart-item__pict"><img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt=""></a>
+									<div class="cart-item__main">
+										<a href="#" class="cart-item__title">Название в две строки</a>
+										<a href="#" class="cart-item__delete"></a>
+										<div class="cart-item__desc">
+											<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+										</div>
+									</div>
+								</div>
+								<div class="cart-item__bottom">
+									<div class="cart-item__count">
+										<button class="cart-item__counter cart-item__minus"><span>-</span></button>
+										<input type="text" class="cart-item__in" value="1">
+										<button class="cart-item__counter cart-item__plus"><span>+</span></button>
+									</div>
+									<div class="cart-item__price">789 <span>руб.</span></div>
+								</div>
+							</div>
+							<div class="cart-item">
+								<div class="cart-item__body">
+									<div class="cart-item__pict"><img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt=""></div>
+									<div class="cart-item__main">
+										<div class="cart-item__title">Название в три строки в три строки</div>
+										<a href="#" class="cart-item__delete"></a>
+										<div class="cart-item__desc">
+											<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+										</div>
+									</div>
+								</div>
+								<div class="cart-item__bottom">
+									<div class="cart-item__count">
+										<button class="cart-item__counter cart-item__minus"><span>-</span></button>
+										<input type="text" class="cart-item__in" value="1">
+										<button class="cart-item__counter cart-item__plus"><span>+</span></button>
+									</div>
+									<div class="cart-item__price">789 <span>руб.</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="cart-footer">
+							<div class="cart-total">
+								<div class="cart-subtitle">Сумма:</div>
+								<div class="cart-num">1 789 <span>руб.</span></div>
+							</div>
+							<button class="btn btn_color1 btn_size2 cart-btn">Оформить заказ</button>
+						</div>
+						<div class="cart-empty-title">Ваша корзина пуста</div>
+					</div>
+				</div>
+			</div>
+			<div class="floating-end"></div>
+		</div>
+	</section>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="footer-wrap">
+			<div class="footer-copyright">Лори Суши © 2020</div>
+			<a href="#" class="footer-politic">Пользовательское соглашение</a>
+			<div class="footer-contact">
+				<div class="footer-social">
+					<a href="#" class="footer-social__item footer-social__item_inst">Instagram</a>
+					<a href="#" class="footer-social__item footer-social__item_vk">Vkontakte</a>
+				</div>
+				<a href="tel:88005550000" class="footer-phone">8-800-555-00-00</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="login-modal modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="login-modal__content modal-content">
+			<div class="login-modal__title">Вход на сайт</div>
+			<button type="button" class="login-modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="login-modal__body">
+				<form action="#">
+					<input type="text" class="phone-in" placeholder="+7 (999) 999-99-99">
+					<button class="btn btn_size1 login-modal__btn" type="submit">Выслать код</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cart-modal modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="cart-mob modal-content">
+			<div class="cart-header">
+				<div class="cart-header__title">Корзина<span>3</span></div>
+				<a href="#" class="cart-remove">Очистить</a>
+			</div>
+			<div class="cart-body">
+				<div class="cart-item">
+					<div class="cart-item__body">
+						<a href="#" class="cart-item__pict"><img src="images/product-1.png" alt=""></a>
+						<div class="cart-item__main">
+							<a href="#" class="cart-item__title">Альба сет</a>
+							<a href="#" class="cart-item__delete"></a>
+							<div class="cart-item__desc">
+								<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+							</div>
+						</div>
+					</div>
+					<div class="cart-item__bottom">
+						<div class="cart-item__count">
+							<button class="cart-item__counter cart-item__minus"><span>-</span></button>
+							<input type="text" class="cart-item__in" value="1">
+							<button class="cart-item__counter cart-item__plus"><span>+</span></button>
+						</div>
+						<div class="cart-item__price">789 <span>руб.</span></div>
+					</div>
+				</div>
+				<div class="cart-item">
+					<div class="cart-item__body">
+						<div class="cart-item__pict"><img src="images/product-1.png" alt=""></div>
+						<div class="cart-item__main">
+							<div class="cart-item__title">Альба сет</div>
+							<a href="#" class="cart-item__delete"></a>
+							<div class="cart-item__desc">
+								<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+							</div>
+						</div>
+					</div>
+					<div class="cart-item__bottom">
+						<div class="cart-item__count">
+							<button class="cart-item__counter cart-item__minus"><span>-</span></button>
+							<input type="text" class="cart-item__in" value="1">
+							<button class="cart-item__counter cart-item__plus"><span>+</span></button>
+						</div>
+						<div class="cart-item__price">789 <span>руб.</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-footer">
+				<div class="cart-total">
+					<div class="cart-subtitle">Сумма:</div>
+					<div class="cart-num">1 789 <span>руб.</span></div>
+				</div>
+				<button class="btn btn_size2 cart-btn">Оформить заказ</button>
+			</div>
+			<div class="cart-empty-title">Ваша корзина пуста</div>
+		</div>
+	</div>
+</div>
+
+<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+<script src="libs/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<script src="libs/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/jquery.lazy.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/inputMask/jquery.inputmask.bundle.min.js"></script>
+<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+
+</html>

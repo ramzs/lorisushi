@@ -1,0 +1,73 @@
+/*-------------------Contact-page--------------------*/
+.section-contact
+	padding: 0 0 90px
+
+.contact
+	&-wrap
+		position: relative
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		z-index: 1
+		&:before
+			content: ''
+			position: absolute
+			top: -65px
+			right: 20px
+			width: 325px
+			height: 401px
+			z-index: -1
+			background: url(../images/vetka.png) 0 0 no-repeat
+			background-size: 100%
+	&-main
+		width: 22.4%
+		min-width: 262px
+		padding: 46px 030px 40px
+		background: $accent
+	&-item
+		margin-bottom: 20px
+		&__title
+			margin-bottom: 2px
+			font-size: 18px
+			font-weight: 600
+			color: #fff
+		&__main
+			font-size: 14px
+			color: #efeded
+			&:hover
+				color: #efeded
+	&-phone
+		display: inline-block
+		margin-top: 16px
+		font-size: 18px
+		font-weight: 600
+		color: #fff
+		&:hover
+			color: #fff
+	&-social
+		margin-top: 12px
+		padding-top: 28px
+		border-top: 1px solid #ff80b1
+		&__link
+			display: inline-block
+			vertical-align: middle
+			margin-right: 16px
+			&_inst
+				width: 17px
+				height: 17px
+				background: url(../images/inst-white.png) 0 0 no-repeat
+				background-size: 100%
+			&_vk
+				width: 24px
+				height: 14px
+				background: url(../images/vk-white.png) 0 0 no-repeat
+				background-size: 100%
+	&-map
+		width: 77.8%
+		height: 440px
+		> ymaps
+			width: 100% !important
+			height: 100% !important
+/*-------------------end Contact-page--------------------*/
