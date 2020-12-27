@@ -125,9 +125,9 @@
 				a:after
 					width: 100%
 	&-login
+		margin-right: 30px
 		white-space: nowrap
 		&__link
-			display: inline-block
 			font-size: 16px
 			font-weight: 600
 			color: $accent
@@ -147,7 +147,9 @@
 				max-width: 100%
 
 .btn
-	display: block
+	display: flex
+	align-items: center
+	justify-content: center
 	padding: 0 15px
 	color: #fff
 	white-space: nowrap
@@ -260,12 +262,15 @@
 		display: block
 		width: 100%
 		height: 40px
+		margin-bottom: 10px
 		padding-left: 15px
 		outline: none
 		font-size: 16px
 		color: #5c5c5c
 		border: 1px solid #ff0062
 		border-radius: 20px
+	input.field__code
+		display: none
 	&__btn
 		width: 174px
 		margin: 34px auto 0

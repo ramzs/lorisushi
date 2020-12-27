@@ -67,7 +67,7 @@
 				position: absolute
 				display: inline-block !important
 				top: 0
-				right: 15px
+				right: 60px
 				width: 150px
 				color: $accent
 				line-height: 38px
@@ -116,7 +116,7 @@
 
 	.menu-list
 		&__item
-			width: calc(100% / 5)
+			width: calc(100% / 4)
 		&__title
 			margin-left: 8px
 			font-size: 15px
@@ -190,13 +190,33 @@
 		&-login
 			&__mob
 				display: block !important
+				top: 10px
+				width: 24px
+				height: 24px
+				padding: 0
+				font-size: 0
+				border: none
+				border-radius: 0
+				background-size: 100% !important
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 24px
+					height: 24px
+					background: url(../images/login.svg) 0 0 no-repeat
+					background-size: 100%
+				&:hover, &:focus
+					border: none
+					background: none !important
 
 	.slide-item
 		height: 230px
 
 	.menu-list
 		&__item
-			width: calc(100% / 4)
+			width: calc(100% / 3)
 			min-width: 127px
 
 	.footer
@@ -337,7 +357,7 @@
 				max-width: 100%
 		&-login
 			&__mob
-				top: -9px
+				top: 0
 		&-cart
 			&_mob
 				top: 2px
@@ -429,6 +449,36 @@
 			border-top: none
 			border-left: 1px solid rgba(255, 255, 255, 0.5)
 
+	/*--------------Product modal----------------*/
+	.product-modal
+		&__content
+			padding: 40px
+		.product-item
+			display: block
+			padding: 30px 15px 20px
+			&__top
+				position: relative
+				width: 100%
+			&__pict
+				margin-bottom: 15px
+				text-align: center
+			&__title
+				display: inline-block
+			&__info
+				display: inline-block
+			&__main
+				position: relative
+				width: 100%
+				padding: 0 0 60px 0
+			&__desc
+				padding: 0
+			&__bottom
+				position: absolute
+				bottom: 5px
+				width: 100%
+				padding: 0
+	/*--------------end product modal----------------*/
+
 	/*-------------------Contact-page--------------------*/
 	.contact
 		&-wrap
@@ -472,6 +522,15 @@
 		&-phone
 			font-size: 20px
 
+	/*--------------Product modal----------------*/
+	.product-modal
+		&__content
+			padding: 20px
+		&__close
+			top: 7px
+			right: 7px
+	/*--------------end product modal----------------*/
+
 @media only screen and (max-width : 479px)
 	.header
 		&.fixed
@@ -497,7 +556,7 @@
 	.menu-list
 		&__item
 			min-width: auto
-			width: calc(100% / 3)
+			width: calc(100% / 2)
 
 	.section-content
 		padding: 50px 0
@@ -558,7 +617,6 @@
 	.menu-list
 		&__item
 			min-width: auto
-			width: calc(100% / 3)
 		&__title
 			font-size: 14px
 

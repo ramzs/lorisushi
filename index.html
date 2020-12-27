@@ -64,7 +64,7 @@
 			<li><a href="contact.html">Контакты</a></li>
 			<li><a href="feedback.html">Отзывы</a></li>
 		</ul>
-		<!-- <a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__mob" data-toggle="modal">Вход</a> -->
+		<a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__mob" data-toggle="modal">Вход</a>
 		<div class="header-cart header-cart_mob">
 			<a href="#" class="header-cart__link"><img src="images/cart2.png" alt="" /></a>
 		</div>
@@ -128,12 +128,12 @@
 					</ul>
 				</div>
 			</div>
+			<div class="header-login">
+				<a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__link" data-toggle="modal">Личный кабинет</a>
+			</div>
 			<div class="header-cart">
 				<a href="#" class="header-cart__link"><img src="images/cart2.png" alt="" /></a>
 			</div>
-			<!-- <div class="header-login">
-				<a href="#login-modal" class="header-login__link" data-toggle="modal">Личный кабинет</a>
-			</div> -->
 		</div>
 	</div>
 </header>
@@ -210,42 +210,42 @@
 				</div>
 			</div>
 			<div class="menu-list">
-				<a href="#" class="menu-list__item">
-					<div class="menu-list__pict"><img src="images/menu-1.png" data-src="images/menu-1.png" class+="lazy" alt=""></div>
+				<a href="#product-modal" class="menu-list__item active" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-1.png" data-src="images/menu-1.png" class="lazy" alt=""></div>
 					<div class="menu-list__title">Сеты</div>
 				</a>
-				<a href="#" class="menu-list__item">
-					<div class="menu-list__pict"><img src="images/menu-2.png" data-src="images/menu-2.png" class+="lazy" alt=""></div>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-2.png" data-src="images/menu-2.png" class="lazy" alt=""></div>
 					<div class="menu-list__title">Роллы</div>
 				</a>
-				<!-- <a href="#" class="menu-list__item">
-						<div class="menu-list__pict"><img src="images/menu-3.png" data-src="images/menu-3.png" class+="lazy" alt=""></div>
-						<div class="menu-list__title">Супы</div>
-					</a> -->
-				<!-- <a href="#" class="menu-list__item">
-						<div class="menu-list__pict"><img src="images/menu-4.png" data-src="images/menu-4.png" class+="lazy" alt=""></div>
-						<div class="menu-list__title">Салаты</div>
-					</a> -->
-				<!-- <a href="#" class="menu-list__item">
-						<div class="menu-list__pict"><img src="images/menu-5.png" data-src="images/menu-5.png" class+="lazy" alt=""></div>
-						<div class="menu-list__title">WOK</div>
-					</a> -->
-				<a href="#" class="menu-list__item">
-					<div class="menu-list__pict"><img src="images/menu-6.png" data-src="images/menu-6.png" class+="lazy" alt=""></div>
-					<div class="menu-list__title">Напитки</div>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-3.png" data-src="images/menu-3.png" class="lazy" alt=""></div>
+					<div class="menu-list__title">Жаренные роллы</div>
 				</a>
-				<a href="#" class="menu-list__item">
-					<div class="menu-list__pict"><img src="images/menu-7.png" data-src="images/menu-7.png" class+="lazy" alt=""></div>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-4.png" data-src="images/menu-4.png" class="lazy" alt=""></div>
+					<div class="menu-list__title">Запеченные роллы</div>
+				</a>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-5.png" data-src="images/menu-5.png" class="lazy" alt=""></div>
 					<div class="menu-list__title">Специи</div>
+				</a>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-6.png" data-src="images/menu-6.png" class="lazy" alt=""></div>
+					<div class="menu-list__title">Закуски</div>
+				</a>
+				<a href="#product-modal" class="menu-list__item" data-toggle="modal">
+					<div class="menu-list__pict"><img src="images/menu-7.png" data-src="images/menu-7.png" class="lazy" alt=""></div>
+					<div class="menu-list__title">Напитки</div>
 				</a>
 				<!-- <a href="#" class="menu-list__item">
 						<div class="menu-list__pict"><img src="images/menu-8.png" data-src="images/menu-8.png" class+="lazy" alt=""></div>
 						<div class="menu-list__title">Десерты</div>
 					</a> -->
-				<a href="#" class="menu-list__item">
+				<!-- <a href="#" class="menu-list__item">
 					<div class="menu-list__pict"><img src="images/menu-9.png" data-src="images/menu-9.png" class="lazy" alt=""></div>
 					<div class="menu-list__title">Закуски</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 	</div>
@@ -501,9 +501,47 @@
 			</button>
 			<div class="login-modal__body">
 				<form action="#">
-					<input type="text" class="phone-in" placeholder="+7 (999) 999-99-99">
-					<button class="btn btn_size1 login-modal__btn" type="submit">Выслать код</button>
+					<input type="text" class="field__phone phone-in" placeholder="+7 (999) 999-99-99">
+					<input type="text" class="field__code" placeholder="Введите код из смс">
+					<button class="btn btn_color2 btn_size1 btn_reverse2 login-modal__btn" type="submit">Выслать код</button>
 				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="product-modal modal fade" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="productModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="product-modal__content modal-content">
+			<button type="button" class="product-modal__close close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<div class="product-item">
+				<div class="product-item__top">
+					<div class="product-item__stick"><span>-35%</span></div>
+					<a href="#" class="product-item__pict">
+						<img src="images/product-1.png" data-src="images/product-1.png" class="lazy" alt="">
+					</a>
+				</div>
+				<div class="product-item__main">
+					<a href="#" class="product-item__title">Название в две строки</a>
+					<div class="product-item__info">1000г | 36 шт | 999 ккал</div>
+					<div class="product-item__desc">
+						<a href="#">Филадельфия</a>, <a href="#">Жареный бостон</a>, <a href="#">Унаги</a>, <a href="#">Сяке маки</a>, <a href="#">Фирменный</a>, <a href="#">Филадельфия люкс</a>, <a href="#">Запеченный чикен</a>
+					</div>
+					<div class="product-item__bottom">
+						<div class="product-item__price">
+							<div class="product-item__oldprice">1100 <span>руб.</span></div>
+							<div class="product-item__newprice">789 <span>руб.</span></div>
+						</div>
+						<button type="submit" class="btn btn_color1 btn_size3 product-item__btn">В корзину</button>
+						<div class="product-item__count count">
+							<button class="count-counter count-counter_minus"><span>-</span></button>
+							<input type="text" class="count-in" value="1">
+							<button class="count-counter count-counter_plus"><span>+</span></button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

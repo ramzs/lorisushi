@@ -303,11 +303,11 @@ ul {
 }
 
 .header-login {
+  margin-right: 30px;
   white-space: nowrap;
 }
 
 .header-login__link {
-  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   color: #ec3e5f;
@@ -337,7 +337,18 @@ ul {
 }
 
 .btn {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 15px;
   color: #fff;
   white-space: nowrap;
@@ -509,12 +520,17 @@ ul {
   display: block;
   width: 100%;
   height: 40px;
+  margin-bottom: 10px;
   padding-left: 15px;
   outline: none;
   font-size: 16px;
   color: #5c5c5c;
   border: 1px solid #ff0062;
   border-radius: 20px;
+}
+
+.login-modal input.field__code {
+  display: none;
 }
 
 .login-modal__btn {
@@ -705,15 +721,14 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-calc(100% / 5);
   width: calc(100% / 5);
   min-width: 129px;
   height: 80px;
@@ -735,11 +750,11 @@ ul {
   background: #ec3e5f;
 }
 
-.menu-list__item:hover {
+.menu-list__item:hover, .menu-list__item.active {
   color: #333;
 }
 
-.menu-list__item:hover:after {
+.menu-list__item:hover:after, .menu-list__item.active:after {
   width: 100%;
 }
 
@@ -1394,9 +1409,37 @@ ul {
 .inner-title {
   margin-bottom: 16px;
   font-size: 28px;
-  font-weight: 600;
 }
 
+/*--------------Product modal----------------*/
+.product-modal__content {
+  padding: 50px;
+}
+
+.product-modal__close {
+  position: absolute;
+  float: none;
+  top: 15px;
+  right: 15px;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  opacity: 1;
+  outline: none;
+  background: url(../images/close.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.product-modal__close:focus {
+  outline: none;
+}
+
+.product-modal .product-item {
+  width: 100%;
+  margin: 0;
+}
+
+/*--------------end product modal----------------*/
 /*-------------------Contact-page--------------------*/
 .section-contact {
   padding: 0 0 90px;
@@ -1939,6 +1982,10 @@ ul {
   display: block;
   margin-bottom: 12px;
   font-size: 12px;
+}
+
+.basket-form__field_cash {
+  display: none;
 }
 
 .basket-form__field input {

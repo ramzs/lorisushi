@@ -123,6 +123,49 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.login-modal__btn').on('click', function () {
+		var th = $(this);
+		var phoneIn = $('.field__phone');
+		var codeIn = $('.field__code');
+
+		$(this).toggleClass('active').text(th.is('.active') ? 'Отправить' : 'Выслать код');
+		phoneIn.hide();
+		codeIn.fadeIn();
+
+		return false;
+	});
+
+	const field = $('.basket-form__field_textarea');
+	const fieldCash = $('.basket-form__field_cash');
+	$(".basket-pay__item input:radio").change(function () {
+		var th = $(this);
+		var pay = th.closest('.basket-pay__item');
+
+		if (pay.hasClass("basket-pay__item_cash")) {
+			field.hide();
+			fieldCash.fadeIn();
+		} else {
+			field.fadeIn();
+			fieldCash.hide();
+		}
+		return false;
+	});
+	$(window).on('load', function () {
+		$(".basket-pay__item input:radio").each(function () {
+			var th = $(this);
+			var pay = th.closest('.basket-pay__item');
+
+			if (pay.hasClass("basket-pay__item_cash")) {
+				field.hide();
+				fieldCash.fadeIn();
+			} else {
+				field.fadeIn();
+				fieldCash.hide();
+			}
+			return false;
+		});
+	});
+
 	//показать пустую корзину. Удалить потом
 	$('.cart-remove').on('click', function () {
 		$(this).closest('.cart, .cart-mob').toggleClass('cart-empty');
