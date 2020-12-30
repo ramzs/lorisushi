@@ -128,11 +128,19 @@ $(document).ready(function () {
 		var phoneIn = $('.field__phone');
 		var codeIn = $('.field__code');
 
-		$(this).toggleClass('active').text(th.is('.active') ? 'Отправить' : 'Выслать код');
+		$(this).addClass('active').text(th.is('.active') ? 'Подтвердить' : 'Войти');
 		phoneIn.hide();
 		codeIn.fadeIn();
 
 		return false;
+	});
+
+	$('.product-item__desc a').on('click', function () {
+		var th = $(this);
+
+		th.closest('.product-item').find('.product-item__desc a').removeClass('active');
+		$(this).toggleClass('active');
+
 	});
 
 	const field = $('.basket-form__field_textarea');

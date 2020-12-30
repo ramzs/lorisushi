@@ -248,7 +248,7 @@ ul {
 
 .header-nav {
   width: 100%;
-  padding: 2px 0 0 102px;
+  padding: 2px 0 0 70px;
 }
 
 .header-nav .container {
@@ -308,6 +308,7 @@ ul {
 }
 
 .header-login__link {
+  width: 170px;
   font-size: 16px;
   font-weight: 600;
   color: #ec3e5f;
@@ -529,7 +530,7 @@ ul {
   border-radius: 20px;
 }
 
-.login-modal input.field__code {
+.login-modal .field__code {
   display: none;
 }
 
@@ -884,7 +885,7 @@ ul {
   color: #989898;
 }
 
-.product-item__desc a:hover {
+.product-item__desc a:hover, .product-item__desc a.active {
   color: #ec3e5f;
 }
 

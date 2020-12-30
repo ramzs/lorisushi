@@ -129,10 +129,10 @@
 				</div>
 			</div>
 			<div class="header-login">
-				<a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__link" data-toggle="modal">Личный кабинет</a>
+				<a href="#login-modal" class="btn btn_color2 btn_size1 btn_reverse2 header-login__link" data-toggle="modal">Войти</a>
 			</div>
 			<div class="header-cart">
-				<a href="#" class="header-cart__link"><img src="images/cart2.png" alt="" /></a>
+				<a href="#" class="header-cart__link"><img src="images/cart.svg" alt="" /></a>
 			</div>
 		</div>
 	</div>
@@ -195,17 +195,27 @@
 </footer>
 
 <div class="login-modal modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-centered">
 		<div class="login-modal__content modal-content">
-			<div class="login-modal__title">Вход на сайт</div>
+			<!-- <div class="login-modal__title">Вход на сайт</div> -->
 			<button type="button" class="login-modal__close close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
 			<div class="login-modal__body">
 				<form action="#">
-					<input type="text" class="field__phone phone-in" placeholder="+7 (999) 999-99-99">
-					<input type="text" class="field__code" placeholder="Введите код из смс">
-					<button class="btn btn_color2 btn_size1 btn_reverse2 login-modal__btn" type="submit">Выслать код</button>
+					<div class="basket-form__in field__phone">
+						<div class="basket-form__field validate-in">
+							<input type="text" class="phone-in" placeholder="Введите телефон" required>
+						</div>
+					</div>
+					<div class="basket-form__in field__code">
+						<div class="basket-form__field validate-in">
+							<input type="text" placeholder="Введите СМС-код" required>
+						</div>
+					</div>
+					<!-- <input type="text" class="field__phone phone-in" placeholder="+7 (999) 999-99-99">
+					<input type="text" class="field__code" placeholder="Введите код из смс"> -->
+					<button class="btn btn_color2 btn_size1 login-modal__btn" type="submit">Войти</button>
 				</form>
 			</div>
 		</div>
@@ -213,7 +223,7 @@
 </div>
 
 <div class="product-modal modal fade" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="productModal" aria-hidden="true">
-	<div class="modal-dialog">
+	<div class="modal-dialog modal-dialog-centered">
 		<div class="product-modal__content modal-content">
 			<button type="button" class="product-modal__close close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
