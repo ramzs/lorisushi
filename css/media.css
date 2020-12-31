@@ -701,6 +701,12 @@
   .inner {
     padding-top: 110px;
   }
+  .login-modal .modal-dialog {
+    max-width: 290px;
+  }
+  .login-modal__content {
+    padding: 50px 30px 35px;
+  }
   /*-------------------Cart-page--------------------*/
   .basket-item {
     -webkit-flex-wrap: wrap;

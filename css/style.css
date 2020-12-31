@@ -480,12 +480,11 @@ ul {
 
 /*---------------Login form--------------*/
 .login-modal .modal-dialog {
-  max-width: 290px;
+  max-width: 420px;
 }
 
 .login-modal__content {
-  max-width: 314px;
-  padding: 42px 31px 28px;
+  padding: 90px 60px 85px;
   text-align: center;
   border: none;
   border-radius: 5px;
