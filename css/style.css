@@ -1795,8 +1795,13 @@ ul {
 }
 
 .basket-item__col {
+  width: 33.33%;
   margin-bottom: 40px;
   padding-right: 20px;
+}
+
+.basket-item__col .basket-item__pict {
+  height: 58px;
 }
 
 .basket-item__col .basket-item__title {
