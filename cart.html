@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+	<head>
 
-	<meta charset="utf-8">
+		<meta charset="utf-8">
 
-	<title>Лори суши</title>
+		<title>Лори суши</title>
 
-	<meta name="description" content="">
+		<meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="icon" href="images/favicon/favicon.png">
-	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-144x144.png">
-	<meta property="og:image" content="images/home-og.jpg">
+		<link rel="icon" href="images/favicon/favicon.png">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="96x96" href="images/favicon/apple-touch-icon-144x144.png">
+		<meta property="og:image" content="images/home-og.jpg">
 
-	<link rel="stylesheet" href="libs/bootstrap-4.5.2-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+		<link rel="stylesheet" href="libs/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/datetimepicker/jquery.datetimepicker.min.css">
+		<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+		<link rel="stylesheet" href="libs/slick/slick.css">
+		<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media.css">
 
-	<script src="libs/modernizr/modernizr.js"></script>
+		<script src="libs/modernizr/modernizr.js"></script>
 
-</head>
+	</head>
 
-<body>
+	<body>
+
 
 <div class="overlay"></div>
 <div class="mob-nav">
@@ -219,7 +221,26 @@
 								<a href="#" class="basket-item__remove"></a>
 							</div>
 						</div>
-						<div class="basket-item basket-item_columns">
+						<div class="basket-item">
+							<div class="basket-item__main">
+								<div class="basket-item__pict"><img src="images/product-6.png" data-src="images/product-6.png" alt="" class="lazy"></div>
+								<div class="basket-item__info">
+									<div class="basket-item__title">Комплект специй</div>
+								</div>
+							</div>
+							<div class="basket-item__order">
+								<div class="basket-item__count count">
+									<button class="count-counter count-counter_minus"><span>-</span></button>
+									<input type="text" class="count-in" value="1">
+									<button class="count-counter count-counter_plus"><span>+</span></button>
+								</div>
+								<div class="basket-item__prices">
+									<div class="basket-item__curprice">0<span>&nbsp;руб.</span></div>
+								</div>
+								<a href="#" class="basket-item__remove"></a>
+							</div>
+						</div>
+						<!-- <div class="basket-item basket-item_columns">
 							<div class="basket-item__col">
 								<div class="basket-item__pict"><img src="images/product-3.png" data-src="images/product-3.png" alt="" class="lazy"></div>
 								<div class="basket-item__title">Васаби</div>
@@ -256,7 +277,7 @@
 									<div class="basket-item__price">10<span>&nbsp;руб.</span></div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 					<!-- <div class="basket-totalprice">Сумма: 599<span>&nbsp;руб.</span></div> -->
 				</div>
@@ -274,9 +295,48 @@
 			</div>
 			<div class="basket-totalprice">Сумма: 599<span>&nbsp;руб.</span></div>
 			<div class="floating-end"></div>
+
 			<div class="row">
 				<div class="basket-order col">
-					<div class="basket-order__title">Данные клиента</div>
+					<div class="basket-order__title">Данные заказа</div>
+					<div class="basket-data">
+						<a href="#" class="basket-save">+<span>Сохранить адрес</span></a>
+						<div class="basket-cl slider">
+							<div class="cl-item">
+								<div class="basket-addres">
+									<a href="#" class="basket-addres__remove"></a>
+									<div class="basket-addres__text">Ленина Ленина Ленина 80</div>
+									<a href="#" class="basket-addres__edit">Редактировать</a>
+									<a href="#" class="btn btn_color2 basket-addres__delete">Удалить</a>
+									<a href="#" class="btn btn_color2 basket-addres__save">Сохранить</a>
+									<input type="hidden" class="hidden-name" value="Name">
+									<input type="hidden" class="hidden-phone" value="89999999999">
+									<input type="hidden" class="hidden-street" value="Ленина Ленина Ленина">
+									<input type="hidden" class="hidden-house" value="80">
+									<input type="hidden" class="hidden-room" value="23">
+									<input type="hidden" class="hidden-door" value="2">
+									<input type="hidden" class="hidden-floor" value="4">
+								</div>
+							</div>
+							<div class="cl-item">
+								<div class="basket-addres">
+									<a href="#" class="basket-addres__remove"></a>
+									<div class="basket-addres__text">Ленина 80</div>
+									<a href="#" class="basket-addres__edit">Редактировать</a>
+									<a href="#" class="btn btn_color2 basket-addres__delete">Удалить</a>
+									<a href="#" class="btn btn_color2 basket-addres__save">Сохранить</a>
+									<input type="hidden" class="hidden-name" value="Name2">
+									<input type="hidden" class="hidden-phone" value="87777777777">
+									<input type="hidden" class="hidden-street" value="Ленина">
+									<input type="hidden" class="hidden-house" value="90">
+									<input type="hidden" class="hidden-room" value="55">
+									<input type="hidden" class="hidden-door" value="5">
+									<input type="hidden" class="hidden-floor" value="2">
+								</div>
+							</div>
+						</div>
+						<div class="basket-order__valid">Заполнены не все поля</div>
+					</div>
 					<form action="#">
 						<div class="basket-order__wrap">
 							<div class="basket-form">
@@ -285,33 +345,15 @@
 										<div class="basket-form__in">
 											<span class="basket-form__label">Имя</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Имя" required>
+												<input class="field-name" type="text" placeholder="Имя">
 											</div>
 										</div>
 									</div>
 									<div class="basket-form__col">
 										<div class="basket-form__in">
-											<span class="basket-form__label">Телефон</span>
+											<span class="basket-form__label">Телефон *</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" class="phone-in" placeholder="Телефон" required>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="basket-form__row hide-field">
-									<div class="basket-form__col">
-										<div class="basket-form__in">
-											<span class="basket-form__label">Улица</span>
-											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Улица" required>
-											</div>
-										</div>
-									</div>
-									<div class="basket-form__col">
-										<div class="basket-form__in">
-											<span class="basket-form__label">Дом</span>
-											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Дом" required>
+												<input class="field-phone phone-in" type="tel" placeholder="Телефон" required>
 											</div>
 										</div>
 									</div>
@@ -319,9 +361,27 @@
 								<div class="basket-form__row hide-field">
 									<div class="basket-form__col">
 										<div class="basket-form__in">
-											<span class="basket-form__label">Квартира</span>
+											<span class="basket-form__label">Улица *</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Квартира">
+												<input class="field-street" type="text" placeholder="Улица" required>
+											</div>
+										</div>
+									</div>
+									<div class="basket-form__col">
+										<div class="basket-form__in">
+											<span class="basket-form__label">Дом *</span>
+											<div class="basket-form__field validate-in">
+												<input class="field-house" type="text" placeholder="Дом" required>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-form__row hide-field">
+									<div class="basket-form__col">
+										<div class="basket-form__in">
+											<span class="basket-form__label">Квартира *</span>
+											<div class="basket-form__field validate-in">
+												<input class="field-room" type="text" placeholder="Квартира" required>
 											</div>
 										</div>
 									</div>
@@ -329,7 +389,7 @@
 										<div class="basket-form__in">
 											<span class="basket-form__label">Подъезд</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Подъезд">
+												<input class="field-door" type="text" placeholder="Подъезд">
 											</div>
 										</div>
 									</div>
@@ -339,13 +399,13 @@
 										<div class="basket-form__in hide-field">
 											<span class="basket-form__label">Этаж</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" placeholder="Этаж">
+												<input class="field-floor" type="text" placeholder="Этаж">
 											</div>
 										</div>
 										<div class="basket-form__in">
 											<span class="basket-form__label">Ко времени</span>
 											<div class="basket-form__field validate-in">
-												<input type="text" class="time-in" placeholder="Ко времени">
+												<input id="datetimepicker" type="text" placeholder="Ко времени" autocomplete="off" readonly="readonly">
 											</div>
 										</div>
 									</div>
@@ -385,9 +445,11 @@
 										Картой на сайте
 									</label>
 								</div>
+								<div class="basket-policy">Продолжая, вы соглашаетесь <a href="/files/policy.pdf" target="_blank">со сбором и <br>обработкой персональных данных и <br>пользовательским соглашением</a></div>
 								<button class="btn btn_size5 btn_color2 basket-orderbtn">Оформить заказ</button>
 							</div>
 						</div>
+						<div class="basket-policy basket-policy_mob">Продолжая, вы соглашаетесь <a href="/files/policy.pdf" target="_blank">со сбором и <br>обработкой персональных данных и <br>пользовательским соглашением</a></div>
 						<button class="btn btn_size5 btn_color2 basket-orderbtn basket-orderbtn_mob">Оформить заказ</button>
 					</form>
 				</div>
@@ -404,10 +466,13 @@
 			<a href="#" class="footer-politic">Пользовательское соглашение</a>
 			<div class="footer-contact">
 				<div class="footer-social">
-					<a href="#" class="footer-social__item footer-social__item_inst">Instagram</a>
-					<a href="#" class="footer-social__item footer-social__item_vk">Vkontakte</a>
+					<a href="https://www.instagram.com/lori_volsk/" class="footer-social__item footer-social__item_inst">Instagram</a>
+					<a href="https://vk.com/lorisushi_volsk" class="footer-social__item footer-social__item_vk">Vkontakte</a>
 				</div>
-				<a href="tel:88005550000" class="footer-phone">8-800-555-00-00</a>
+				<div class="footer-phones">
+					<a href="tel:88005550000" class="footer-phone">8-800-555-00-00</a>
+					<a href="tel:89372594325" class="footer-phone">8-937-259-43-25</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -548,6 +613,7 @@
 
 <script src="libs/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 <script src="libs/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="libs/datetimepicker/jquery.datetimepicker.full.min.js"></script>
 <script src="libs/jquery.lazy.min.js"></script>
 <script src="libs/formstyler/jquery.formstyler.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
@@ -558,3 +624,4 @@
 </body>
 
 </html>
+

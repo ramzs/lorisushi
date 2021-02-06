@@ -103,4 +103,12 @@ ul
 
 .main, .inner
 	flex: 1 0 auto
+
+.slider
+	opacity: 0
+	visibility: hidden
+	transition: opacity .25s ease
+	&.slick-initialized
+		opacity: 1
+		visibility: visible
 /*----------end---------------*/

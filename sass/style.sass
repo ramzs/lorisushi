@@ -6,7 +6,6 @@
 @import "header"
 
 .slider-main
-	display: none
 	margin-top: 110px
 	.sl-item
 		outline: none
@@ -114,19 +113,20 @@
 	border-left: 1px solid #e5e5e5
 	&__item
 		position: relative
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
-		justify-content: flex-start
-		align-items: center
-		width: calc(100% / 5)
-		min-width: 129px
-		height: 80px
+		flex-direction: column
+		justify-content: center
+		align-items: flex-end
+		width: calc(100% / 9)
+		height: 118px
+		padding: 10px 5px 12px
 		overflow: hidden
+		text-align: center
 		border-right: 1px solid #e5e5e5
 		border-bottom: 1px solid #e5e5e5
+		&.sale
+			.menu-list__title
+				color: $accent
 		&:after
 			content: ''
 			position: absolute
@@ -142,17 +142,17 @@
 				width: 100%
 	&__pict
 		position: relative
-		width: 34%
+		width: 100%
 		img
-			position: absolute
-			display: block
-			top: 50%
-			right: 0
-			transform: translateY(-50%)
+			display: inline-block
+			max-width: 100%
+			max-height: 100%
 	&__title
-		margin-left: 14px
+		width: 100%
+		margin-top: 9px
 		font-size: 16px
 		font-weight: 600
+		line-height: 1.1
 
 .section-content
 	padding: 54px 0 100px
@@ -329,17 +329,17 @@
 	padding: 32px 25px
 	overflow: hidden
 	background: $blue
-	&:before
-		content: ''
-		position: absolute
-		bottom: -72px
-		left: 0
-		right: 0
-		width: 181px
-		height: 182px
-		margin: 0 auto
-		background: url(../images/clock.png) 0 0 no-repeat
-		background-size: 100%
+	// &:before
+	// 	content: ''
+	// 	position: absolute
+	// 	bottom: -72px
+	// 	left: 0
+	// 	right: 0
+	// 	width: 181px
+	// 	height: 182px
+	// 	margin: 0 auto
+	// 	background: url(../images/clock.png) 0 0 no-repeat
+	// 	background-size: 100%
 	&__title
 		font-size: 18px
 		font-weight: 600
@@ -612,6 +612,19 @@
 		width: 100%
 		margin: 0
 /*--------------end product modal----------------*/
+
+.section-thanks
+	height: 100%
+	.container
+		height: 100%
+
+.thanks
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	&-text
+		font-size: 18px
 
 @import "contact"
 

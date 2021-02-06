@@ -9,12 +9,16 @@
 @media only screen and (max-width : 1199px)
 	.header
 		&-nav
-			padding-left: 60px
+			padding-left: 30px
 		&-menu
 			li
 				margin-right: 5px
 				a
-					padding: 10px
+					padding: 10px 5px
+
+	.menu-list
+		&__title
+			font-size: 12px
 
 	.product-item
 		width: 50%
@@ -121,7 +125,7 @@
 
 	.menu-list
 		&__item
-			width: calc(100% / 4)
+			width: calc(100% / 5)
 		&__title
 			margin-left: 8px
 			font-size: 15px
@@ -182,6 +186,11 @@
 				width: 50%
 		&-formside
 			margin-left: 30px
+		&-cl
+			max-width: 424px
+			min-width: 212px
+			.slick-track, .slick-slide
+				min-width: 212px
 	/*-------------------end Cart-page--------------------*/
 
 @media only screen and (max-width : 768px)
@@ -250,14 +259,18 @@
 			display: flex
 			justify-content: center
 			width: 100%
-			margin-bottom: 5px
+			margin-bottom: 10px
 			text-align: center
 		&-contact
+			flex-direction: column
 			justify-content: center
 			width: 100%
 		&-social
 			justify-content: center
-			margin-bottom: 2px
+			margin-bottom: 10px
+		&-phones
+			width: 100%
+			text-align: center
 		&-phone
 			margin: 0
 
@@ -344,6 +357,44 @@
 			&_mob
 				display: block
 				margin: 12px auto 0
+		&-data
+			display: block
+		&-save
+			margin: 0 0 12px
+		&-cl
+			max-width: none
+			min-width: auto
+			margin: 0 -6px
+			.slick-arrow
+				width: 10px
+				height: 10px
+				top: 50%
+				transform: translateY(-50%)
+				&:before
+					top: 0
+					transform: none
+				&.slick-next
+					background: none
+					&:before
+						right: -5px
+				&.slick-prev
+					background: none
+					&:before
+						left: -5px
+			.slick-track
+				max-width: none
+			.slick-track, .slick-slide
+				min-width: auto
+			.cl-item
+				max-width: none
+		&-policy
+			display: none
+			&_mob
+				display: block
+				margin: 5px 0 25px
+				text-align: center
+				br
+					display: none
 
 	.promocode
 		padding: 0 30px
