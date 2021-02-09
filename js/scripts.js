@@ -172,37 +172,6 @@ $(document).ready(function () {
 
 	});
 
-	let field = $('.basket-form__field_textarea');
-	let fieldCash = $('.basket-form__field_cash');
-	$(".basket-pay__item input:radio").change(function () {
-		var th = $(this);
-		var pay = th.closest('.basket-pay__item');
-
-		if (pay.hasClass("basket-pay__item_cash")) {
-			field.hide();
-			fieldCash.stop().fadeIn();
-		} else {
-			field.stop().fadeIn();
-			fieldCash.hide();
-		}
-		return false;
-	});
-	$(window).on('load', function () {
-		$(".basket-pay__item input:radio").each(function () {
-			var th = $(this);
-			var pay = th.closest('.basket-pay__item');
-
-			if (pay.hasClass("basket-pay__item_cash")) {
-				field.hide();
-				fieldCash.stop().fadeIn();
-			} else {
-				field.stop().fadeIn();
-				fieldCash.hide();
-			}
-			return false;
-		});
-	});
-
 	//показать пустую корзину. Удалить потом
 	$('.cart-remove').on('click', function () {
 		$(this).closest('.cart, .cart-mob').toggleClass('cart-empty');
@@ -254,17 +223,54 @@ $(document).ready(function () {
 		var th = $(this);
 		var form = th.closest('.basket-delivery').find('input[type=checkbox]');
 		var curier = $('.hide-field');
-		// var pay = $('.basket-pay');
+		var pay = $('.basket-pay');
+		var payNotDel = $('.basket-pay_notdelivery');
+		var payCash = $('.basket-pay__item_cash');
+
+		payCash.find('input:radio').trigger('click')
 
 		if (!form.is(':checked')) {
 			curier.stop().fadeOut();
-			// pay.addClass('notactive');
+			pay.hide();
+			payNotDel.stop().fadeIn('fast');
 		} else {
 			curier.stop().fadeIn();
-			// pay.removeClass('notactive');
+			pay.stop().fadeIn('fast');
+			payNotDel.hide();
 		}
 
 		return false;
+	});
+
+	let field = $('.basket-form__field_textarea');
+	let fieldCash = $('.basket-form__field_cash');
+	$(".basket-pay__item input:radio").change(function () {
+		var th = $(this);
+		var pay = th.closest('.basket-pay__item');
+
+		if (pay.hasClass("basket-pay__item_cash")) {
+			field.hide();
+			fieldCash.stop().fadeIn();
+		} else {
+			field.stop().fadeIn();
+			fieldCash.hide();
+		}
+		return false;
+	});
+	$(window).on('load', function () {
+		$(".basket-pay__item input:radio").each(function () {
+			var th = $(this);
+			var pay = th.closest('.basket-pay__item');
+
+			if (pay.hasClass("basket-pay__item_cash")) {
+				field.hide();
+				fieldCash.stop().fadeIn();
+			} else {
+				field.stop().fadeIn();
+				fieldCash.hide();
+			}
+			return false;
+		});
 	});
 
 	// fixed cart
@@ -441,7 +447,7 @@ $(document).ready(function () {
 
 		} else {
 
-			$('.basket-cl').slick('slickAdd', '<div class="cl-item"><div class="basket-addres"><a href = "#" class= "basket-addres__remove" ></a><div class="basket-addres__text">' + fieldStreet + ' ' + fieldHouse + '</div><a href="#" class="basket-addres__edit">Редактировать</a><a href="#" class="btn btn_color2 basket-addres__delete">Удалить</a><a href="#" class="btn btn_color2 basket-addres__save">Сохранить</a><input type="hidden" class="hidden-name" value="' + fieldName + '"><input type="hidden" class="hidden-phone" value="' + fieldPhone + '"><input type="hidden" class="hidden-street" value="' + fieldStreet + '"><input type="hidden" class="hidden-house" value="' + fieldHouse + '"><input type="hidden" class="hidden-room" value="' + fieldRoom + '"><input type="hidden" class="hidden-door" value="' + fieldDoor + '"><input type="hidden" class="hidden-floor" value="' + fieldFloor + '"></div></div>');
+			$('.basket-cl').slick('slickAdd', '<div class="cl-item"><div class="basket-addres"><a href = "#" class= "basket-addres__remove" ></a><div class="basket-addres__text">' + fieldStreet + ' ' + fieldHouse + '</div><a href="#" class="basket-addres__edit">Редактировать</a><a href="#" class="btn btn_color3 basket-addres__delete">Удалить</a><a href="#" class="btn btn_color3 basket-addres__save">Сохранить</a><input type="hidden" class="hidden-name" value="' + fieldName + '"><input type="hidden" class="hidden-phone" value="' + fieldPhone + '"><input type="hidden" class="hidden-street" value="' + fieldStreet + '"><input type="hidden" class="hidden-house" value="' + fieldHouse + '"><input type="hidden" class="hidden-room" value="' + fieldRoom + '"><input type="hidden" class="hidden-door" value="' + fieldDoor + '"><input type="hidden" class="hidden-floor" value="' + fieldFloor + '"></div></div>');
 
 			$('.basket-addres__remove').bind('click', function (e) {
 				var th = $(this);
@@ -459,7 +465,6 @@ $(document).ready(function () {
 				delThis.stop().fadeIn('fast');
 				saveThis.hide();
 
-
 				return false;
 			});
 
@@ -475,6 +480,8 @@ $(document).ready(function () {
 				$(".basket-order form").trigger('reset');
 				$(".basket-form .basket-form__field").removeClass('not-empty');
 			}, 300);
+
+			$('.basket-order__valid').stop().fadeOut('fast');
 		}
 
 		return false;

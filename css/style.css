@@ -441,6 +441,30 @@ ul {
   background: #fff;
 }
 
+.btn_color3 {
+  border: 1px solid #ec3e5f;
+  background: #ec3e5f;
+}
+
+.btn_color3:hover, .btn_color3:focus:hover {
+  color: #ec3e5f;
+  background: none;
+}
+
+.btn_color3:focus {
+  color: #ec3e5f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+}
+
+.btn_color3:active {
+  color: #ec3e5f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+}
+
 .btn_reverse2 {
   color: #ec3e5f;
   border: 1px solid #ec3e5f;
@@ -2119,6 +2143,10 @@ ul {
   color: #fff;
 }
 
+.basket-pay_notdelivery {
+  display: none;
+}
+
 .basket-pay__title {
   margin-bottom: 12px;
   font-size: 16px;
@@ -2376,10 +2404,6 @@ ul {
   line-height: 36px;
   text-align: center;
   border-radius: 18px;
-}
-
-.basket-addres__delete:hover, .basket-addres__save:hover {
-  color: #ec3e5f;
 }
 
 /*-------------------end Cart-page--------------------*/
